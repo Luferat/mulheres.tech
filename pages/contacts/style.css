@@ -39,7 +39,7 @@
     background: linear-gradient(rgb(255, 89, 255), rgb(139, 0, 139));
 }
 
-/* Estilo para campo válido */
+/* Estilo para campos válidos */
 #contacts input:valid, #contacts textarea:valid {
     background-color: rgb(232, 240, 254);
     border: 1px solid green;
@@ -47,16 +47,16 @@
 }
 
 
-/* Estilo para campo inválido */
+/* Estilo para campos inválidos */
 #contacts input:invalid, #contacts textarea:invalid {
     background-color: rgb(255, 207, 207);
     border: 1px solid red;
     border-bottom: 3px solid red;
 }
 
-/* Estilo para o botão inválido */
-
+/* Estilo para o botão, quando o formulário for inválido */
 #contacts:invalid button {
     background: linear-gradient(rgb(170, 170, 170), rgb(79, 79, 79));
     cursor: not-allowed;
+    pointer-events: none;
 }
