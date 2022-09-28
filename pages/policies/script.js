@@ -6,4 +6,4 @@
 setTitle("Políticas de Privacidade");
 
 // Monta menu auxiliar:
-$('aside nav').html(aboutMenu);
+$('.about-menu').html(aboutMenu);

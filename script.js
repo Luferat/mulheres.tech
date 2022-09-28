@@ -28,7 +28,8 @@ function runApp() {
    * jQuery → Quando houver click em um elemento <a>, execute o aplicativo 
    * "routerLink":
    **/
-   $('a').click(routerLink);
+   // $('a').click(routerLink);
+   $(document).on('click', 'a', routerLink);
 
 }
 

@@ -163,6 +163,9 @@ body {
 
 /* Itens do menu */
 #wrap>nav a {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   padding: 0.7rem;
   text-align: center;
   color: rgb(255, 240, 255);
@@ -198,6 +201,10 @@ body {
 /* Torna o menu principal responsivo à telas maiores */
 @media screen and (min-width: 480px) {
 
+  #wrap>nav a {
+    flex-direction: row;
+  }
+
   /* Diminui tamanho dos ícones */
   #wrap>nav i {
     font-size: 1.2rem;
@@ -205,8 +212,8 @@ body {
 
   /* Alinha labels com os ícones horizontalmente */
   #wrap>nav span {
-    display: inline-block;
     margin-top: 0;
+    margin-left: .4rem;
   }
 }
 
@@ -332,6 +339,10 @@ body {
   /* Ajusta posição dos menus inferiores */
   #finf {
     justify-content: space-around;
+  }
+
+  #finf nav a {
+    font-size: 1rem;
   }
 }
 
