@@ -19,10 +19,10 @@
  * runApp() → Aplicativo principal
  * Este aplicativo é executado pela última linha deste código.
  */
- function runApp() {
+function runApp() {
 
   // Carrega a página inicial do site quando este iniciar:
-  loadPage('contacts');
+  loadPage('about');
 
   /**
    * jQuery → Quando houver click em um elemento <a>, execute o aplicativo 
@@ -112,6 +112,9 @@ function loadPage(href) {
     $.getScript(page.js);
 
   });
+
+  // Atualiza URL da página:
+  // window.history.pushState({}, "", href);
 
 }
 
