@@ -22,12 +22,13 @@
 function runApp() {
 
   // Carrega a página inicial do site quando este iniciar:
-  loadPage('about');
+  loadPage('home');
 
   /**
    * jQuery → Quando houver click em um elemento <a>, execute o aplicativo 
    * "routerLink":
    **/
+  // $('a').click(routerLink);
   $(document).on('click', 'a', routerLink);
 
   // Prepara o menu dropdown:
